@@ -48,7 +48,7 @@ body {
 
 #home-screen {
   z-index: 2;
-  background-image: url('./assets/images/oldpaper4.png');
+  background-image: url("../images/oldpaper4.png");
   transform-origin: left center;
   transform-style: preserve-3d;
   transition: transform 1s ease;
@@ -61,7 +61,7 @@ body {
   height: 100vh;
   align-items: center;
   justify-content: center;
-  background-image: url('./assets/images/oldpaper4.png');
+  background-image: url("../images/oldpaper4.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
