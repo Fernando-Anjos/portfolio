@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Seu Nome - Portfólio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/card.css" />
+</head>
+<body>  
+
+  <div id="app">
+
+    <section id="home-screen" class="screen active">
+      <header class="header">
+        <h1 class="title" >MAX FERNANDO </h1>
+        <p>Developer Journal</p>
+      </header>
+
+      <main class="container">
+        
+        <aside class="left">
+            <div>
+                <img src="assets/images/me3.png" class="me">
+            </div>
+          <h2>About me</h2>
+          <p>I like to build things from scratch. Not perfect things — real things.
+
+            My projects usually start as simple ideas and slowly evolve through trial, error, and curiosity.
+            I enjoy the process as much as the result.
+
+            I work mainly with JavaScript, HTML, and CSS, exploring ways to make interfaces feel alive and interactive.
+
+            This portfolio is part of that journey — a mix of code, design, and experimentation.</p>
+
+          <h3>Technologies</h3>
+          <ul>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>HTML & CSS</li>
+            <li>Ruby</li>
+            <li>SQL</li>
+          </ul>
+        </aside>
+
+        <section class="main">
+
+          <section class="projects">
+            
+            <div class="card">
+                <img src="assets/images/dashboard.svg" class="dashboard-img">
+
+                <div class="card-content">
+                    <h3>Financial Tracker</h3>
+
+                    <p>A smart financial tracker<br>
+                        that helps users manage<br> expenses, 
+                        visualize<br> spending, and stay in<br> 
+                        control of their money.</p>
+
+                    <a href="#">Coming soon</a>
+                </div>
+            </div>
+            
+
+            <div class="card">          
+                <div class="card-content">
+                    <h3>Blackjack</h3>
+                    <p>An interactive Blackjack game embedded within the portfolio.<br>
+
+                    Designed to go beyond functionality, this project combines core game
+                    logic with a stylized interface, including hand-drawn elements and 
+                    a custom character, highlighting both technical and creative skills.</p>
+                    <a href="#" id="open-blackjack" >View project</a>
+                </div>
+                
+                <img src="assets/images/blackjack5.png" class="blackjack-img">
+
+            </div>
+
+          </section>
+        </section>
+
+        <aside class="right">
+          <h2>Contact</h2>
+          <p>Email: maxfernando.anjos@gmail.com</p>
+          <p>https://github.com/Fernando-Anjos</p>
+        </aside>
+
+      </main>
+
+      <footer class="footer">
+        <p>© 2026 - Max Fernando</p>
+      </footer>
+    </section>
+
+    <section id="blackjack-screen" class="screen">
+      <div id="game-container">
+        <div class="table-scene">
+
+          <img src="/assets/images/table2.svg" class="table-image">
+
+          <div id="dealer-hand" class="hand dealer-hand"></div>
+          <div id="player-hand" class="hand player-hand"></div>
+
+          <div id="dealer-score" class="score-box dealer-score">
+
+            <img src="assets/images/cards/score.png">
+
+            <div class="score-content">
+
+              <p class="score-label">DEALER</p>
+              <div class="score-line"></div>
+              <span class="score-number" id="dealer-score-text">18</span>
+              
+            </div>
+
+          </div>
+
+
+          <div id="player-score" class="score-box player-score">
+
+            <img src="assets/images/cards/score.png">
+
+            <div class="score-content">
+
+              <p class="score-label">YOU</p>
+              <div class="score-line"></div>
+              <span class="score-number" id="player-score-text">18</span>
+
+            </div>
+
+          </div>
+
+          <div class="controls">
+
+            <button id="hit" class="game-btn">
+              <img src="assets/images/cards/hit.svg">
+            </button>
+
+            <button id="stand" class="game-btn">
+              <img src="assets/images/cards/stand.svg">
+            </button>
+
+            <button id="double" class="btn-double game-btn ">
+              <img src="assets/images/cards/double.svg">
+            </button>            
+
+          </div> 
+
+          <div id="chip-area-bet">
+
+            <div class="chip-stack-bet" id="stack-bet"></div>
+
+          </div>
+          
+          <div id="player-area" class="chip-area">
+
+            <div class="chip-stack" id="stack-1"></div>
+            <div class="chip-stack" id="stack-2"></div>
+            <div class="chip-stack" id="stack-3"></div>
+            <div class="chip-stack" id="stack-4"></div>
+            <div class="chip-stack" id="stack-5"></div>
+            <div class="chip-stack" id="stack-6"></div>
+
+          </div>
+
+          <div id="dealer-area" class="chip-area">
+
+            <div class="chip-stack" id="stack-7"></div>
+            <div class="chip-stack" id="stack-8"></div>
+            <div class="chip-stack" id="stack-9"></div>
+            <div class="chip-stack" id="stack-10"></div>
+            <div class="chip-stack" id="stack-11"></div>
+            <div class="chip-stack" id="stack-12"></div>
+
+          </div>
+
+          <img id="result-stamp" class="result-stamp">
+
+        </div>
+
+       
+      </div>
+
+      <div id="card-viewer">        
+        <div id="viewer-card"></div>
+      </div>
+
+      
+    </section>
+
+    <section id="ending-screen"
+      class="screen">
+      <div id= "ending-container">
+          <div class="ending-book">
+
+            <div class="ending-left">
+
+              <!-- desenho -->
+
+            </div>
+
+            <div class="ending-right">
+
+              <div id="ending-content"></div>
+
+            </div>
+          </div>
+        </div>
+
+    </section>
+
+    <div id="rapid-pages">
+
+      <div class="rapid-page"></div>
+      <div class="rapid-page"></div>
+      <div class="rapid-page"></div>
+      <div class="rapid-page"></div>
+
+    </div>
+
+    
+
+  </div>
+
+  <audio id="page-sound" src="assets/sounds/page.mp3"></audio>
+  <audio id="page-shuffling" src="assets/sounds/pageshuffling.mp3"></audio>
+
+</body>
+  <script src="/assets/js/index.js" type="module"></script>
+  
+</html>
