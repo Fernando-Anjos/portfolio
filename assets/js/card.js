@@ -218,7 +218,7 @@ export function createHiddenCard() {
   card.className = "card-deck hidden-card";
 
   const bg = document.createElement("img");
-  bg.src = "assets/images/cards/backcard.png";
+  bg.src = "./assets/images/cards/backcard.png";
   bg.className = "card-deck-bg";
 
   card.appendChild(bg);
